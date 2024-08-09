@@ -1,6 +1,17 @@
-:root{
+* {
+    margin : 0;
+    padding : 0;
+}
+
+img{
+    cursor: pointer;
+}
+
+body{
     background-color: black;
 }
+
+/* --- nav --- */
 
 .navigation-bar{
     background-color: black;
@@ -8,16 +19,17 @@
     top: 0px;
     z-index: 1;
     width: 100%;
-    height: 15%;
+    height: 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0 20px;
 }
 
 .logo{
-    width: 10%;
-    height: 100%;
+    /* 유연하게 만듬 */
+    flex: 1;
     display: flex;
     align-items: center;
 }
@@ -25,29 +37,31 @@
 .logo img{
     top: 0px;
     width: 100%;
-    height: 30%;
+    height: 100%;
     object-fit: cover;
 }
 
-.logo img a{
-    align-items: end;
+.menu-container{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
 
 .navigation-bar .menu-container ul{
     display: flex;
-    flex-wrap:wrap;
-    align-items: center;
+    list-style: none;
 }
 
 .navigation-bar .menu-container li{
     padding: 1rem;
-    list-style: none;
 }
 
-.navigation-bar li a{
+.navigation-bar .menu-container li a{
     text-decoration: none;
     color: white;
+    padding: 0;
+    display: block;
 }
 
 .navigation-bar li a:hover{
@@ -56,10 +70,31 @@
 }
 
 .set-container{
+    flex: 1;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap:wrap;
+}
+
+.search-bar{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-right: 3%;
+    justify-content: center;
+}
+
+.input-bar{
+    border-radius: 12px;
+    height: 30px;
+    background-color: rgb(35, 34, 34);
+    margin-bottom: 10%;
+    color: white;
+    font-weight: bold;
+}
+
+.search-bar img{
+    padding-top: 15%;
+    max-width: 20px;
+    cursor: pointer;
 }
 
 .setting{
@@ -67,29 +102,86 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
 }
 
 .setting li{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 10px;
 }
 
-.setting img{
-    max-width: 30%;
+.notice, .my-page{
+    padding: 0.5rem;
+    max-width: 25px;
+    height: auto;
+    object-fit: cover;
 }
+
+/* --- banner --- */
 
 .banner{
     background-image: url(./netflix_img/bankruptcy_of_day_poster.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 30%;
+    background-size: cover;
+    background-position: center;
+    height: 448px;
     width: 100%;
-    object-fit: cover;
     color: white;
+    cursor: pointer;
 }
+
+.banner-container{
+    margin-left: 30px;
+    padding-top: 190px;
+    height: 190px; 
+}
+
+.banner-title{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 0.3rem;
+}
+
+.banner-btn button{
+    width: 60px;
+    height: 30px;
+    border-radius: 2px;
+    border : 1px solid transparent
+}
+
+.banner-btn button :hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.banner-details{
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* content-list */
+
+.korea-contents-box{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.content-img{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.content-img :hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.content-img::-webkit-scrollbar{
+    display: none;
+}
+
+/* footer */
 
 .footer{
     display: flex;
