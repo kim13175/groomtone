@@ -118,18 +118,18 @@ body{
 /* --- banner --- */
 
 .banner{
-    background-image: url(./netflix_img/bankruptcy_of_day_poster.jpeg);
-    background-size: cover;
+    background-image: url(./netflix_img/theifs_banner.jpeg);
+    background-size: contain;
     background-position: center;
-    height: 448px;
+    height: 650px;
     width: 100%;
     color: white;
-    cursor: pointer;
+    background-repeat: no-repeat;
 }
 
 .banner-container{
-    margin-left: 30px;
-    padding-top: 190px;
+    margin-left: 5%;
+    padding-top: 30%;
     height: 190px; 
 }
 
@@ -137,6 +137,21 @@ body{
     font-size: 3rem;
     font-weight: bold;
     padding-bottom: 0.3rem;
+}
+
+.banner-btn{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 12px;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.banner-details{
+    font-weight: bold;
 }
 
 .banner-btn button{
