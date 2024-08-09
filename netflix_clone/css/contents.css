@@ -1,0 +1,96 @@
+/* --- banner --- */
+
+.banner{
+    background-image: url(./netflix_img/theifs_banner.jpeg);
+    background-size: contain;
+    background-position: center;
+    height: 650px;
+    width: 100%;
+    color: white;
+    background-repeat: no-repeat;
+}
+
+.banner-container{
+    margin-left: 5%;
+    padding-top: 30%;
+    height: 190px; 
+}
+
+.banner-title{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 0.3rem;
+}
+
+.banner-btn{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 12px;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.banner-details{
+    font-weight: bold;
+}
+
+.banner-btn button{
+    width: 60px;
+    height: 30px;
+    border-radius: 2px;
+    border : 1px solid transparent
+}
+
+.banner-btn button :hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
+.banner-details{
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* content-list */
+
+.contents-box{
+    white-space: nowrap;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.content-title{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.content-list{
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.content-img{
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    max-height: 300px;
+    transition: transform 450ms;
+}
+
+.content-img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.contents-box::-webkit-scrollbar{
+    display: none;
+}

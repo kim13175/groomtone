@@ -1,0 +1,119 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+img{
+    cursor: pointer;
+}
+
+body{
+    background-color: black;
+}
+
+/* --- nav --- */
+
+.navigation-bar{
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.logo{
+    /* 유연하게 만듬 */
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-container{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigation-bar .menu-container ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigation-bar .menu-container li{
+    padding: 1rem;
+}
+
+.navigation-bar .menu-container li a{
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    display: block;
+}
+
+.navigation-bar li a:hover{
+    color: gray;
+    font-size: 15px;
+}
+
+.set-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-right: 3%;
+    justify-content: center;
+}
+
+.input-bar{
+    border-radius: 12px;
+    height: 30px;
+    background-color: rgb(35, 34, 34);
+    margin-bottom: 10%;
+    color: white;
+    font-weight: bold;
+}
+
+.search-bar img{
+    padding-top: 15%;
+    max-width: 20px;
+    cursor: pointer;
+}
+
+.setting{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.setting li{
+    margin-left: 10px;
+}
+
+.notice, .my-page{
+    padding: 0.5rem;
+    max-width: 25px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
