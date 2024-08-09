@@ -174,25 +174,41 @@ body{
 
 /* content-list */
 
-.korea-contents-box{
+.contents-box{
+    overflow: hidden;
+    white-space: nowrap;
     margin-left: 25px;
     margin-top: 20px;
 }
 
-.content-img{
+.content-title{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+.content-list{
     width: 100%;
-    object-fit: contain;
-    max-height: 100px;
-    margin-right: 10px;
+    height: auto;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.content-img{
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+    max-height: 300px;
     transition: transform 450ms;
 }
 
-.content-img :hover{
-    transform: scale(1.1);
+.content-img:hover{
+    transform: scale(1.2);
     cursor: pointer;
 }
 
-.content-img::-webkit-scrollbar{
+.contents-box::-webkit-scrollbar{
     display: none;
 }
 
